@@ -1,9 +1,10 @@
 <idea-plugin>
-    <id>com.ADMARIl.halcyon-jetbrains</id>
-    <name>Halcyon Theme</name>
-    <vendor email="aings1@umbc.edu" url="https://github.com/ADMARIl/halcyon-jetbrains">Andrew Ingson</vendor>
+  <id>com.kuanghc.halcyon-jetbrains</id>
+  <name>Halcyon Copy Theme</name>
+  <vendor email="aings1@umbc.edu" url="https://github.com/ADMARIl/halcyon-jetbrains">Andrew Ingson
+  </vendor>
 
-    <description><![CDATA[
+  <description><![CDATA[
     <p>A minimal, dark blue theme for the JetBrains suite of IDEs based on
     <a href="https://github.com/bchiang7/halcyon-vscode">Brittany Chiang's VSCode theme</a>. Please consider leaving a review for this theme!
     </p>
@@ -33,18 +34,19 @@
 
     ]]></description>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
-    <depends>com.intellij.modules.lang</depends>
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.lang</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-        <themeProvider id="a20dcb56-3527-478b-b687-b4b9bc4971b1" path="/Halcyon.theme.json"/>
-        <postStartupActivity implementation="com.ADMARIl.halcyonjetbrains.HandleStartup.StartupWelcomeActivity" />
-        <notificationGroup id="Halcyon Theme" displayType="BALLOON"/>
-    </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <themeProvider id="a20dcb56-3527-478b-b687-b4b9bc4971b1" path="/Halcyon.theme.json"/>
+    <postStartupActivity
+      implementation="com.kuanghc.halcyonjetbrains.HandleStartup.StartupWelcomeActivity"/>
+    <notificationGroup id="Halcyon Copy Theme" displayType="BALLOON"/>
+  </extensions>
 
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
 </idea-plugin>

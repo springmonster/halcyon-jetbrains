@@ -1,37 +1,36 @@
-package com.ADMARIl.halcyonjetbrains.HandleStartup;
+package com.kuanghc.halcyonjetbrains.HandleStartup;
 
-import com.intellij.notification.*;
-import com.intellij.openapi.editor.colors.EditorColorsManager;
-import com.intellij.openapi.editor.colors.EditorColorsScheme;
+import com.intellij.notification.Notification;
+import com.intellij.notification.NotificationListener;
 import com.intellij.openapi.options.ShowSettingsUtil;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.startup.StartupActivity;
+import javax.swing.event.HyperlinkEvent;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.event.HyperlinkEvent;
-
 public class StartupWelcomeActivity implements StartupActivity {
-    @Override
-    public void runActivity(@NotNull Project project) {
-        // TODO: This is broken for some dumb reason
-        if (HalcyonSettings.getInstance().isWelcomeNotifyShowed()) {
-            return;
-        }
+
+  @Override
+  public void runActivity(@NotNull Project project) {
+    // TODO: This is broken for some dumb reason
+    if (HalcyonSettings.getInstance().isWelcomeNotifyShowed()) {
+      return;
+    }
 
 //        // TODO: Needs to be removed at some point
 //        NotificationGroup notificationGroup = new NotificationGroup(
 //                "Halcyon Theme", NotificationDisplayType.BALLOON, true
 //        );
 
-        NotificationListener.Adapter notificationListener = new NotificationListener.Adapter() {
-            @Override
-            protected void hyperlinkActivated(@NotNull Notification notification, @NotNull HyperlinkEvent e) {
-                if (!project.isDisposed()) {
-                    ShowSettingsUtil.getInstance().showSettingsDialog(project, "Appearance");
-                }
-            }
-        };
-         // Wait for API sunset before using
+    NotificationListener.Adapter notificationListener = new NotificationListener.Adapter() {
+      @Override
+      protected void hyperlinkActivated(@NotNull Notification notification, @NotNull HyperlinkEvent e) {
+        if (!project.isDisposed()) {
+          ShowSettingsUtil.getInstance().showSettingsDialog(project, "Appearance");
+        }
+      }
+    };
+    // Wait for API sunset before using
 //        Notification notification = NotificationGroupManager.getInstance().getNotificationGroup("Halcyon Theme").createNotification(
 //                "Halcyon-Theme",
 //                "If you don't see the correct UI theme, make sure it's selected in " +
@@ -48,14 +47,14 @@ public class StartupWelcomeActivity implements StartupActivity {
 //                notificationListener
 //        );
 
-        // Hopefully forces theme if using for the first time
+    // Hopefully forces theme if using for the first time
         /*EditorColorsManager manager = EditorColorsManager.getInstance();
         EditorColorsScheme scheme = manager.getScheme("Halcyon");
         EditorColorsManager.getInstance().setGlobalScheme(scheme);
         System.out.println("Theme Successfully forced");*/
 
-        // Notifications.Bus.notify(notification);
-        HalcyonSettings.getInstance().setWelcomeNotifyShowed(true);
-        System.out.println("Theme loaded");
-    }
+    // Notifications.Bus.notify(notification);
+    HalcyonSettings.getInstance().setWelcomeNotifyShowed(true);
+    System.out.println("Theme loaded");
+  }
 }

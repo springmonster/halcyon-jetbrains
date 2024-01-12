@@ -19,39 +19,50 @@
 </p>
 
 ![code](docs/screenshots/newUI.jpg)
-*Due to the way JetBrains handles syntax highlighting, there are some slight differences in coloring from the original.*
+*Due to the way JetBrains handles syntax highlighting, there are some slight differences in coloring
+from the original.*
 
 ## Updates
-Unfortunately, I no longer use JetBrains in my day-to-day work so I don't have as much time to keep this plugin updated; however, I still do update occasionally! **Please feel free to contribute if there is an issue I haven't gotten to yet!**
+
+Unfortunately, I no longer use JetBrains in my day-to-day work so I don't have as much time to keep
+this plugin updated; however, I still do update occasionally! **Please feel free to contribute if
+there is an issue I haven't gotten to yet!**
 
 ## Installation via JetBrains
 
 1. Open the **Plugins** panel in your IDE. `File → Settings → Plugins`
-2. Search for `Halcyon Theme`
+2. Search for `Halcyon Copy Theme`
 3. Click **Install** to install it
 4. Click **Ok** to apply the changes
 5. Restart the IDE when prompted
-6. If the theme isn't automatically chosen, go to `File → Settings → Appearance & Behavior → Appearance → Theme →` **Halcyon**
+6. If the theme isn't automatically chosen, go
+   to `File → Settings → Appearance & Behavior → Appearance → Theme →` **Halcyon Copy**
 
 ![settings](docs/screenshots/settings_shadow.png)
 
 ## Manual Installation
 
-Read the [JetBrains Support Page](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_disk)
+Read
+the [JetBrains Support Page](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_disk)
 
 ## Updating (or if the theme suddenly turns itself off)
 
-While the IDE should prompt you when an update is available, there is occasionally an issue where the theme isn't applied after an update
-1. To fix this, go to `File → Settings → Editor → Color Scheme` and ensure **Halcyon** is selected under the `Scheme` dropdown.
-2. Next, ensure **Halcyon** is selected under `File → Settings → Appearance & Behavior → Appearance → Theme`
-3. If the previous two steps didn't fix your issue, try restarting your IDE; otherwise, please [open an issue](https://github.com/ADMARIl/halcyon-jetbrains/issues).
+While the IDE should prompt you when an update is available, there is occasionally an issue where
+the theme isn't applied after an update
+
+1. To fix this, go to `File → Settings → Editor → Color Scheme` and ensure **Halcyon Copy** is selected
+   under the `Scheme` dropdown.
+2. Next, ensure **Halcyon Copy** is selected
+   under `File → Settings → Appearance & Behavior → Appearance → Theme`
+3. If the previous two steps didn't fix your issue, try restarting your IDE; otherwise,
+   please [open an issue](https://github.com/ADMARIl/halcyon-jetbrains/issues).
 
 ## Color Reference
 
 ### Syntax Colors
 
 |                               Color                                | Usage                                           |
-| :----------------------------------------------------------------: | ----------------------------------------------- |
+|:------------------------------------------------------------------:|-------------------------------------------------|
 | ![#c3a6ff](https://via.placeholder.com/10/c3a6ff?text=+) `#c3a6ff` | Keywords, constants, template literals          |
 | ![#ffd580](https://via.placeholder.com/10/ffd580?text=+) `#ffd580` | Functions, classes, object literal keys         |
 | ![#ffae57](https://via.placeholder.com/10/ffae57?text=+) `#ffae57` | Constants, operators                            |
@@ -62,7 +73,7 @@ While the IDE should prompt you when an update is available, there is occasional
 ### UI Colors
 
 |                               Color                                | Usage                                      |
-| :----------------------------------------------------------------: | ------------------------------------------ |
+|:------------------------------------------------------------------:|--------------------------------------------|
 | ![#171c28](https://via.placeholder.com/10/171c28?text=+) `#171c28` | Workbench background                       |
 | ![#1d2433](https://via.placeholder.com/10/1d2433?text=+) `#1d2433` | Editor background                          |
 | ![#2f3b54](https://via.placeholder.com/10/2f3b54?text=+) `#2f3b54` | Highlight, widgets, panels                 |
@@ -81,12 +92,12 @@ See the changelog [here](docs/CHANGELOG.md).
 ## Please Consider Contributing!
 
 - I know I haven't covered all the languages. Please feel free to contribute!
-Pull requests are always welcome. For major changes, please open an issue first to discuss what you would like to change.
+  Pull requests are always welcome. For major changes, please open an issue first to discuss what
+  you would like to change.
 - Have change or addition you'd like to see? Open an issue!
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
 
 ###### Many thanks to [Brittany Chiang](https://github.com/bchiang7) whose existing theme for VS code was the inpiration for this project.
