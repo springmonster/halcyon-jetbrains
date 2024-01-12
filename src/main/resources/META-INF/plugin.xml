@@ -40,7 +40,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="a20dcb56-3527-478b-b687-b4b9bc4971b1" path="/Halcyon.theme.json"/>
+    <themeProvider id="a20dcb56-3527-478b-b687-b4b9bc4971b1" path="/HalcyonCopy.theme.json"/>
     <postStartupActivity
       implementation="com.kuanghc.halcyonjetbrains.HandleStartup.StartupWelcomeActivity"/>
     <notificationGroup id="Halcyon Copy Theme" displayType="BALLOON"/>
