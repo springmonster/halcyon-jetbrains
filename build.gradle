@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.ADMARIl'
-version '23.2'
+version '3.0.0'
 
 repositories {
     mavenCentral()
@@ -12,7 +12,7 @@ repositories {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version.set('IC-2023.2')
+    version.set('IC-2023.3')
 }
 
 tasks {
@@ -29,6 +29,6 @@ tasks {
 //    }
 
     runPluginVerifier {
-        ideVersions.set(["IC-2023.2"])
+        ideVersions.set(["IC-2023.3"])
     }
 }
