@@ -1,9 +1,7 @@
 <idea-plugin>
   <id>com.kuanghc.halcyon-jetbrains</id>
   <name>Halcyon Copy Theme</name>
-  <vendor email="aings1@umbc.edu" url="https://github.com/ADMARIl/halcyon-jetbrains">Andrew Ingson
-  </vendor>
-
+  <vendor email="609779612@qq.com" url="https://github.com/springmonster">springmonster</vendor>
   <description><![CDATA[
     <p>Based on
     <a href="https://github.com/ADMARIl/halcyon-jetbrains">https://github.com/ADMARIl/halcyon-jetbrains</a>
