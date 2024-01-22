@@ -7,7 +7,7 @@
     <a href="https://github.com/ADMARIl/halcyon-jetbrains">https://github.com/ADMARIl/halcyon-jetbrains</a>
     This is a theme plugin for JetBrains IDEs.</p>
     ]]></description>
-
+  <idea-version since-build="201.6668"/>
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <depends>com.intellij.modules.lang</depends>

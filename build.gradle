@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.kuanghc'
-version '3.0.0'
+version '3.1.0'
 
 repositories {
     mavenCentral()
@@ -13,6 +13,7 @@ repositories {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version.set('IC-2023.3')
+    updateSinceUntilBuild.set(false)
 }
 
 tasks {
